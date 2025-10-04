@@ -5,7 +5,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
-    server-->>browser: response code 302(the new note is saved. send a get request to Location in Response Headers)
+    server-->>browser: response code 302
     deactivate server
 Note right of browser: Response code 302 means the new note is saved and the browser should send a GET request to the "Location" header
 
