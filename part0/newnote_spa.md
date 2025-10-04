@@ -8,4 +8,4 @@ sequenceDiagram
     server-->>browser: Response JSON with message: "<newly given message>".
     deactivate server
 
-Note right of browser: The message entered by the user is created. Javascrip handles the update directly and page reload or other request is not performed
+Note right of browser: Page reload or other request is not performed. Javascript handles the update of new message directly to UI.
